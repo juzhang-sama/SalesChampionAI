@@ -30,7 +30,7 @@ const AISimulationScreen: React.FC = () => {
       return;
     }
 
-    const analysisResult = analyzeScript(userScript, selectedScenario.keywords);
+    const analysisResult = analyzeScript(userScript, selectedScenario.keywords, selectedScenario.id);
     setScore(analysisResult);
 
     // 随机选择客户回复
